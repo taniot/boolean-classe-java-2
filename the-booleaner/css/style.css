@@ -1,0 +1,97 @@
+/**************
+COMMON
+**************/
+
+body {
+  margin: 0;
+}
+
+.container {
+  /* padding-left: 0.9375rem;
+  padding-right: 0.9375rem; */
+  padding: 0 0.9375rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/**************
+HEADER
+**************/
+
+header {
+  background-color: #9cd6f4;
+  background-image: url('../img/pattern.png');
+  background-size: 40%;
+  padding: 40px 0;
+}
+
+.img-logo {
+  height: 45px;
+}
+
+/**************
+MAIN
+**************/
+
+main {
+  padding: 40px 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 3rem;
+}
+
+.author-date {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.author .name {
+  color: #4ea0ff;
+}
+
+.author-date .date {
+  font-size: 0.75rem;
+}
+
+.images {
+  margin-bottom: 20px;
+}
+
+.images .caption {
+  font-size: 12px;
+}
+
+.highlights {
+  background-color: yellow;
+}
+
+.content table {
+  text-align: left;
+}
+
+.content table thead {
+  background-color: #7fa6fb;
+  color: white;
+}
+
+.content table thead .main-col {
+  width: 50%;
+}
+
+.content table tbody .odd {
+  background-color: #dfe5f2;
+}
+
+/**************
+FOOTER
+**************/
+
+footer {
+  background-color: #313a6b;
+  color: #ffffff;
+  padding: 1.25rem 0;
+  text-align: center;
+}
