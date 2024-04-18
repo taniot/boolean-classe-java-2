@@ -1,0 +1,39 @@
+/******
+RESET
+******/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.separator {
+  padding: 20px;
+  text-align: center;
+}
+
+.separator::before {
+  content: '';
+  background-color: green;
+  display: block;
+  height: 2px;
+  margin-bottom: 10px;
+}
+
+.separator::after {
+  content: '';
+  background-color: green;
+  display: block;
+  margin-top: 10px;
+  height: 2px;
+}
