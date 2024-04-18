@@ -1,0 +1,55 @@
+/**********
+RESET
+**********/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  background-color: goldenrod;
+  display: flex;
+  padding: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* header > * {
+  background-color: antiquewhite;
+} */
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+}
+
+.left {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  background-color: brown;
+  order: 2;
+}
+
+.right {
+  flex-grow: 1;
+  background-color: green;
+  align-self: center;
+  order: 1;
+}
+
+.demo > * {
+  background-color: yellow;
+  border: 1px solid black;
+}
