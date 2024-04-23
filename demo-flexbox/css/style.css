@@ -8,7 +8,7 @@ RESET
   box-sizing: border-box;
 }
 
-ul {
+/* ul {
   list-style-type: none;
 }
 
@@ -24,6 +24,7 @@ header {
   background-color: antiquewhite;
 } */
 
+/*
 .menu {
   display: flex;
   gap: 20px;
@@ -52,4 +53,51 @@ main {
 .demo > * {
   background-color: yellow;
   border: 1px solid black;
+}
+
+.flex-demo {
+  display: flex;
+}
+
+.box {
+  width: 200px;
+  background-color: brown;
+  border: 1px solid black;
+}
+
+.box-1 {
+  display: flex;
+}
+
+.box-children {
+  background-color: yellow;
+  border: 1px solid black;
+} */
+
+.container {
+  background-color: yellow;
+  margin: 20px auto;
+  width: 960px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  /* gap: 15px; */
+}
+
+.col {
+  background-color: brown;
+  border: 1px solid black;
+  height: 100px;
+  width: calc(100% / 3 - 30px);
+  /* flex-shrink: 1;
+  flex-grow: 0; */
+  flex-shrink: 0;
+  margin: 15px;
+}
+
+.col-wow {
+  width: calc((100% / 3) * 2 - 30px);
 }
