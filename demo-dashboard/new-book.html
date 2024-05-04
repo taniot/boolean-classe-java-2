@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <!-- bootstrap style-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- /bootstrap style-->
+
+    <!-- fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- /fontawesome-->
+  </head>
+  <body>
+    <!-- intestazione di pagina -->
+    <header class="mb-4">
+      <!-- nav -->
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/duck.png" alt="Dashboard" width="60" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Catalogo Libri</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Anagrafica utenti</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"
+                  >Storico prestiti</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Help</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 bg-light"
+                type="search"
+                placeholder="Cerca..."
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">Cerca</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- /nav-->
+    </header>
+    <!-- /intestazione di pagina -->
+
+    <!-- corpo della pagina-->
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- intestazione colonna 1-->
+            <div class="row align-items-center mb-4">
+              <div class="col-12">
+                <h2 class="fs-3 fw-normal mb-0">Catalogo Libri</h2>
+              </div>
+            </div>
+            <!-- /intestazione colonna 1-->
+            <!-- form-->
+            <form action="new-book.html">
+              <div class="row">
+                <div class="col-6 mb-3">
+                  <label for="author-firstname" class="form-label"
+                    >Nome Autore</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="author-firstname"
+                    placeholder="Inserisci il nome dell'autore"
+                    name="author-firstname"
+                    required
+                  />
+                </div>
+                <div class="col-6 mb-3">
+                  <label for="author-lastname" class="form-label"
+                    >Cognome Autore</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="author-lastname"
+                    placeholder="Inserisci il cognome dell'autore"
+                    name="author-lastname"
+                  />
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="book-title" class="form-label">Titolo</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="book-title"
+                    placeholder="Inserisci il titolo del libro"
+                    name="book-title"
+                  />
+                  <div id="book-title-help" class="form-text">
+                    Titolo versione italiana
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-3">
+                  <label for="book-genre" class="form-label">Genere</label>
+                  <select
+                    class="form-select"
+                    aria-label="Scegli il genere"
+                    id="book-genre"
+                    name="book-genre"
+                    required
+                  >
+                    <option value="" selected>---</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <div id="book-title-help" class="form-text">
+                    Seleziona il genere
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-3">
+                  <label for="book-year" class="form-label"
+                    >Anno di pubblicazione</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="book-year"
+                    placeholder="Inserisci l'anno"
+                    name="book-year"
+                  />
+                </div>
+                <div class="col-12 col-lg-4 mb-3">
+                  <label for="book-isbn" class="form-label">ISBN#</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="book-isbn"
+                    placeholder="Inserisci il codice ISBN#"
+                    name="book-isbn"
+                  />
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <label for="book-note" class="form-label">Note</label>
+                  <textarea
+                    class="form-control"
+                    id="book-note"
+                    rows="3"
+                    placeholder="Inserisci eventuali note sul libro"
+                    name="book-note"
+                  ></textarea>
+                </div>
+                <div class="col-12 mb-3">
+                  <input
+                    class="form-check-input me-2"
+                    type="checkbox"
+                    value="1"
+                    id="book-digital"
+                    name="book-digital"
+                  />
+                  <label class="form-check-label" for="book-digital">
+                    Disponibile anche in digitale
+                  </label>
+                </div>
+                <div class="col-12 mb-3">
+                  <input
+                    type="submit"
+                    class="btn btn-primary"
+                    value="Aggiungi Libro"
+                  />
+                </div>
+              </div>
+            </form>
+            <!-- /form -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- /corpo della pagina-->
+
+    <!-- bootstrap js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- /bootstrap js-->
+  </body>
+</html>
