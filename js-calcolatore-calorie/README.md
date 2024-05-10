@@ -2,9 +2,9 @@
 
 Il programma dovrà chiedere all'utente:
 
-- la sua età;
-- i km percorsi (da un minimo di 0.5 a un massimo di 40);
-- l'attività svolta (nuoto, bicicletta, corsa, camminata)
+- la sua età; //number
+- i km percorsi (da un minimo di 0.5 a un massimo di 40); //number - range
+- l'attività svolta (nuoto, bicicletta, corsa, camminata) //select
 
 Sulla base di queste informazioni dovrà calcolare le calorie consumate, secondo queste regole:
 
