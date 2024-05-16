@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcolo biglietto del treno</title>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- /bootstrap -->
+  </head>
+  <body>
+    <section class="py-5">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col text-center">
+            <h1>Calcolo biglietto del treno</h1>
+          </div>
+        </div>
+        <div class="row" id="form-generate">
+          <div class="col col-md-8 mx-auto">
+            <!-- form -->
+            <div class="mb-3">
+              <label for="age-input" class="form-label"
+                >Età del passeggero</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="age-input"
+                placeholder="Inserisci la tua età"
+                name="age"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="km-input" class="form-label">KM da percorrere</label>
+              <input
+                type="number"
+                class="form-control"
+                id="km-input"
+                placeholder="Inserisci i km da percorrere"
+                name="km"
+              />
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-primary" id="generate-ticket">
+                Genera biglietto
+              </button>
+              <button class="btn btn-warning" id="reset-ticket">
+                Reset biglietto
+              </button>
+            </div>
+
+            <!-- form -->
+          </div>
+        </div>
+        <div class="row d-none" id="form-result">
+          <div class="col col-md-8 mx-auto">
+            <h3>Età passeggero</h3>
+            <p id="age-output"></p>
+            <h3>km selezionati</h3>
+            <p id="km-output"></p>
+            <h3>Prezzo biglietto</h3>
+            <p id="price-output"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
